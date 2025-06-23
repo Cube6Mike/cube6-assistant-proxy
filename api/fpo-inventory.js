@@ -16,6 +16,6 @@ export default async function handler(req, res) {
     return res.status(200).json(data);
   } catch (err) {
     console.error('Proxy error:', err);
-    return res.status(500).json({ error: 'Something went wrong with the proxy' });
+    return res.status(500).json({ error: 'Something stupid went wrong with the proxy' });
   }
 }
